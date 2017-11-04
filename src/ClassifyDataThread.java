@@ -1,8 +1,10 @@
-class ClassifyData extends Thread {
+import java.io.IOException;
+
+class ClassifyDataThread extends Thread {
     GetClassifyData getClassifyData;
     protected String name;
 
-    public ClassifyData(GetClassifyData getClassifyData) {
+    public ClassifyDataThread(GetClassifyData getClassifyData) {
         this.getClassifyData = getClassifyData;
     }
 

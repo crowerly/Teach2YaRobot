@@ -1,5 +1,4 @@
 import java.io.*;
-import java.util.*;
 
 /**
  * Created by TangChen on 17/10/30.
@@ -13,9 +12,9 @@ public class Main{
 
         AllDataThread getAllData = new AllDataThread(getClassifyData);
 
-        ClassifyData getClassifyData1 = new ClassifyData(getClassifyData);
+        ClassifyDataThread getClassifyDataThread1 = new ClassifyDataThread(getClassifyData);
 
-        getClassifyData1.run();
+        getClassifyDataThread1.run();
 
         getAllData.run();
     }
